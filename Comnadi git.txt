@@ -29,8 +29,34 @@ cat .git/HEAD
 git log --oneline -> to see the commit in a more compact way
 
 How to remove a commit:
+
+SOFT - to remove just the commit
+
 1. git log --oneline -> to see the commit in a more compact way
 2. git commit --soft HEAD^
    ^ one step pointer
    ^ two step pointer
    "nothing ^" to remove the current, the one that HEAD is pointing to
+
+MIXED - to remove the commit and untracted the file by git
+
+git reset HEAD^
+
+HARD - to remove the commit and the associated file
+
+git reset --hard HEAD^
+
+HOW TO AVOIDING THAT CERTAIN FILES ARE SHARE ON GIT
+
+touch .gitignore
+git add .
+git commit -m "added gitignore"
+
+Now I want to add a debug file but only in gitignore
+touch debug.log
+open .gitignore and write debug.log
+Or if I want to add all the file with the extension .log I can write *.log
+
+If I want to add all the file with the extension .log I can write *.log but
+I want to make an exception for a given file:
+!name_file.log
