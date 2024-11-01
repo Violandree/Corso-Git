@@ -15,3 +15,22 @@ git status -> to see the status of our git-repository
 git add -> to add new file 
 git add . -> to add all the files
 git add *txt -> to add all the txt file
+
+Once I add the files, these can be committed:
+- Name of the commit in yellow: First commit
+- :wq + esc
+- git commit -m "First commit" -m "descrizione"
+
+git restore --staged nome_file -> to restore our file and remove from git
+
+git log -> to see al the commit
+HEAD -> it points to the last branch committed
+cat .git/HEAD
+git log --oneline -> to see the commit in a more compact way
+
+How to remove a commit:
+1. git log --oneline -> to see the commit in a more compact way
+2. git commit --soft HEAD^
+   ^ one step pointer
+   ^ two step pointer
+   "nothing ^" to remove the current, the one that HEAD is pointing to
