@@ -1,0 +1,17 @@
+cd ~/Path -> to change the directory
+
+ls -> to see all the files in a folder
+ls -a -> to see also the hidden files in a folder
+
+mkdir name_folder -> to create a new folder on a given path
+
+git init -> Initialized empty Git repository in C:/Users/andre/Desktop/Repo/.git/
+
+touch -> to create a file - specify also the type of the file
+echo some_text>name_file.type -> to create a file that contains teh word some_text
+cut name_file -> to see the name content of the file
+
+git status -> to see the status of our git-repository
+git add -> to add new file 
+git add . -> to add all the files
+git add *txt -> to add all the txt file
